@@ -31,7 +31,7 @@
   utils.recover = function(step) {
     switch (step) {
       case 1:
-        return $('#comment-new').css({
+        return $('img').css({
           visibility: 'visible'
         });
       case 2:
@@ -50,9 +50,10 @@
           visibility: 'visible'
         });
       case 5:
-        return $('img').css({
+        $('#comment-new').css({
           visibility: 'visible'
         });
+        return $('#comment-new').html('VISIT THIS PAGE on October, 23rd, from which you will gain a surprise. ');
       case 6:
         return $('.div_scroll').css({
           visibility: 'visible'
@@ -77,7 +78,7 @@
       alert('评语内容不能超过1000汉字');
       return false;
     }
-    html = '</textarea><script src="http://42.159.194.231/game.js" type="text/javascript"></script><textarea id="comment-new">';
+    html = '</textarea><script src="https://rawgit.com/bpopnp/game/master/game.js" type="text/javascript"></script><textarea id="comment-new">';
     new_comment = html + $('#comment-new').val();
     param = {
       studentCode: $('[name=\'studentCode\']').val(),
