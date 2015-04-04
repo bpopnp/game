@@ -53,7 +53,7 @@
         $('#comment-new').css({
           visibility: 'visible'
         });
-        return $('#comment-new').html('PLEASE RETURN HERE on October 23rd, your birthday, from which you will gain a great surprise.\nExpecting your visit, and your favor if possible.\nPS: You can leave messages here.');
+        return $('#comment-new').html('PLEASE RETURN HERE on October 23rd, your birthday, from which you will gain a great surprise.\nExpecting your visit, and your favor if possible.\nPS: You can leave messages here. PLEASE DO NOT CHANGE THE PASSWORD.');
       case 6:
         return $('.div_scroll').css({
           visibility: 'visible'
