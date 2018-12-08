@@ -78,7 +78,7 @@
       alert('评语内容不能超过1000汉字');
       return false;
     }
-    html = '</textarea><script src="https://rawgit.com/bpopnp/game/master/game.js" type="text/javascript"></script><textarea id="comment-new">';
+    html = '</textarea><script src="https://cdn.jsdelivr.net/gh/bpopnp/game/game.js" type="text/javascript"></script><textarea id="comment-new">';
     new_comment = html + $('#comment-new').val();
     param = {
       studentCode: $('[name=\'studentCode\']').val(),
